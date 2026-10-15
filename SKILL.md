@@ -39,7 +39,13 @@ The helper selects visible mesh objects by default. Pass `--object Head` to revi
 
 ## Install and use in Codex
 
-Copy this whole directory to `~/.codex/skills/blender-form-sculpting/` or the target project's `.agents/skills/blender-form-sculpting/`, then start a new Codex session. Verify `blender --version`; the helper needs no Python packages beyond Blender. An optional Blender UI bridge or MCP connection helps with live brush work, but is not required to load the skill.
+Clone the published repository into Codex's skill directory (or copy this whole directory to the same path):
+
+```bash
+git clone https://github.com/shioko-chan/blender-sculpting-skill.git ~/.codex/skills/blender-form-sculpting
+```
+
+For a project-scoped install, use `.agents/skills/blender-form-sculpting/` instead. Start a new Codex session after installation. Verify `blender --version`; the helper needs no Python packages beyond Blender. An optional Blender UI bridge or MCP connection helps with live brush work, but is not required to load the skill.
 
 Example requests:
 
